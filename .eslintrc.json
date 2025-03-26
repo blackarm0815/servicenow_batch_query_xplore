@@ -1,0 +1,28 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true,
+        "node": true
+    },
+    "extends": ["airbnb-typescript-base","plugin:import/recommended"],
+    "parser": "@typescript-eslint/parser",
+    "plugins": ["@typescript-eslint"],
+    "parserOptions": {
+    "project": ["tsconfig.json"]
+    },
+    "rules": {
+        "@typescript-eslint/ban-ts-comment": 0,
+        "@typescript-eslint/no-floating-promises": 0,
+        "@typescript-eslint/no-unsafe-assignment": 0,
+        "@typescript-eslint/no-unsafe-call": 0,
+        "@typescript-eslint/no-unsafe-member-access": 0,
+        "no-param-reassign": 1,
+        "max-len": 0,
+        // object destructuring creates ugly javascript, avoid 
+        "prefer-destructuring": 0,
+        // also, stop using nullish coalescing, also makes ugly js
+        "@typescript-eslint/ban-types": 0,
+        "vars-on-top": 1,
+        "no-console": 0
+    }
+}
