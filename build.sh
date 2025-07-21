@@ -23,4 +23,7 @@ fi
 # tidy up
 
 grep -v '@ts-ignore' < code.js > foo.js
-sed -r 's/    /  /g' < foo.js > code.js
+grep -v 'supercalifragilisticexpialidocious' < foo.js > new.js
+cat data.js >> new.js
+echo "" >> new.js
+echo "processData();" >> new.js
